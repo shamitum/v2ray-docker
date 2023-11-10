@@ -45,19 +45,20 @@
     {
       "listen": null,
       "port": 2083,
-      "protocol": "trojan",
+      "protocol": "vless",
       "settings": {
         "clients": [
           {
             "email": "DSI",
             "flow": "",
-            "password": "lmag3Kts4g"
+            "id": "3aa56ffd-2ec9-4404-ada3-4c318d832493"
           }
         ],
+        "decryption": "none",
         "fallbacks": []
       },
       "streamSettings": {
-        "network": "grpc",
+        "network": "ws",
         "security": "tls",
         "tlsSettings": {
           "serverName": "",
@@ -140,9 +141,10 @@
             "domains": []
           }
         },
-        "grpcSettings": {
-          "serviceName": "",
-          "multiMode": true
+        "wsSettings": {
+          "acceptProxyProtocol": false,
+          "path": "/",
+          "headers": {}
         }
       },
       "tag": "inbound-2083",
